@@ -5,7 +5,7 @@
 
 ## @xstd/nullish
 
-Nullish type
+Nullish type.
 
 ## 📦 Installation
 
@@ -14,3 +14,19 @@ yarn add @xstd/nullish
 # or
 npm install @xstd/nullish --save
 ```
+
+## API
+
+### Nullish
+
+```ts
+type Nullish = null | undefined;
+```
+
+### isNullish
+
+```ts
+function isNullish(value: any): value is Nullish
+```
+
+Returns `true` if the provided value is `Nullish`.
